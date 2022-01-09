@@ -129,34 +129,36 @@ export const Home = () => {
 
 
 const Form = styled.form`
+  width: 70%;
+  margin: auto;
+  margin-top: 5rem;
+  height: 5rem;
+  /* border: 1px solid red; */
 
-width:70%;
-margin:auto;
-margin-top: 5rem;
-height: 5rem;
-/* border: 1px solid red; */
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    @media screen and(max-width:465px ) {
+      display: flex;
+      flex-direction: column;
+    }
 
-.inputs{
-  display: flex;
-  justify-content: space-between;
-
-  input{
-    letter-spacing: 2rem;
-    width: 10rem;
-    height: 1.5rem;
-    font-size: 1rem;
-    padding-left: 1.5rem;
-    border: 1px solid blue;
-    &:focus{
-      outline: none;
+    input {
+      letter-spacing: 2rem;
+      width: 10rem;
+      height: 1.5rem;
+      font-size: 1rem;
+      padding-left: 1.5rem;
+      border: 1px solid blue;
+      &:focus {
+        outline: none;
+      }
     }
   }
-}
 
-.submit{
-  width: 22%;
-  justify-content: center;
-  margin-top: 1rem;
-  
-}
+  .submit {
+    width: 22%;
+    justify-content: center;
+    margin-top: 1rem;
+  }
 `;
