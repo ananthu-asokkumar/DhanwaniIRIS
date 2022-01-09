@@ -16,6 +16,7 @@ export const CardData = ({handleDelete,card}) => {
 const Cards = styled.div`
   width: 60%;
   margin: auto;
+  margin-top: 1rem;
 
   height: 2rem;
   border: 1px solid blue;

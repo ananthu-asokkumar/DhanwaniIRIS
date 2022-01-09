@@ -132,15 +132,15 @@ const Form = styled.form`
   width: 70%;
   margin: auto;
   margin-top: 5rem;
-  height: 5rem;
-  /* border: 1px solid red; */
+  height: fit-content;
 
   .inputs {
     display: flex;
     justify-content: space-between;
-    @media screen and(max-width:465px ) {
+    @media screen and (max-width: 700px) {
       display: flex;
       flex-direction: column;
+     
     }
 
     input {
@@ -153,12 +153,15 @@ const Form = styled.form`
       &:focus {
         outline: none;
       }
+      @media screen and (max-width: 700px) {
+        margin-top: .5rem;
+      }
     }
   }
 
   .submit {
     width: 22%;
-    justify-content: center;
+    margin: auto;
     margin-top: 1rem;
   }
 `;
